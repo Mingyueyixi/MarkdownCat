@@ -1,0 +1,302 @@
+._2rhmJa code, ._2rhmJa pre, ._2rhmJa pre[class*=language-] {
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 12px
+}
+
+._2rhmJa {
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 20px
+}
+
+._2rhmJa._3qEfO1 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+._2rhmJa h1, ._2rhmJa h2, ._2rhmJa h3, ._2rhmJa h4, ._2rhmJa h5, ._2rhmJa h6 {
+    margin-bottom: 16px
+}
+
+._2rhmJa h1 {
+    font-size: 26px
+}
+
+._2rhmJa h2 {
+    font-size: 24px
+}
+
+._2rhmJa h3 {
+    font-size: 22px
+}
+
+._2rhmJa h4 {
+    font-size: 20px
+}
+
+._2rhmJa h5 {
+    font-size: 18px
+}
+
+._2rhmJa h6 {
+    font-size: 16px
+}
+
+._2rhmJa p {
+    margin-bottom: 20px;
+    word-break: break-word
+}
+
+._2rhmJa hr {
+    margin: 0 0 20px;
+    border: 0;
+    border-top: 1px solid #eee !important
+}
+
+body.reader-night-mode ._2rhmJa hr {
+    border-color: #2f2f2f !important
+}
+
+._2rhmJa blockquote {
+    padding: 20px;
+    background-color: #fafafa;
+    border-left: 6px solid #e6e6e6;
+    word-break: break-word;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0 0 20px
+}
+
+body.reader-night-mode ._2rhmJa blockquote {
+    background-color: #595959;
+    border-color: #262626
+}
+
+._2rhmJa blockquote h1:last-child, ._2rhmJa blockquote h2:last-child, ._2rhmJa blockquote h3:last-child, ._2rhmJa blockquote h4:last-child, ._2rhmJa blockquote h5:last-child, ._2rhmJa blockquote h6:last-child, ._2rhmJa blockquote li:last-child, ._2rhmJa blockquote ol:last-child, ._2rhmJa blockquote p:last-child, ._2rhmJa blockquote ul:last-child {
+    margin-bottom: 0
+}
+
+._2rhmJa blockquote .image-package {
+    width: 100%;
+    margin-left: 0
+}
+
+._2rhmJa ol, ._2rhmJa ul {
+    word-break: break-word;
+    padding: 0 0 0 1rem
+}
+
+._2rhmJa ol li, ._2rhmJa ul li {
+    line-height: 30px
+}
+
+._2rhmJa ol li ol, ._2rhmJa ol li ul, ._2rhmJa ul li ol, ._2rhmJa ul li ul {
+    margin-top: 8px;
+}
+
+/*._2rhmJa ol {*/
+    /*list-style-type: decimal*/
+/*}*/
+
+/*._2rhmJa ul {*/
+    /*list-style-type: disc*/
+/*}*/
+
+._2rhmJa code {
+    padding: 2px 4px;
+    border: none;
+    vertical-align: middle;
+    white-space: pre-wrap
+}
+
+._2rhmJa :not(pre) code {
+    color: #c7254e;
+    background-color: #f2f2f2
+}
+
+body.reader-night-mode ._2rhmJa :not(pre) code {
+    background-color: #262626
+}
+
+._2rhmJa pre, ._2rhmJa pre[class*=language-] {
+    word-wrap: normal;
+    word-break: break-all;
+    white-space: pre;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    z-index: 0;
+    padding: 1em;
+    line-height: 1.5;
+    color: #ccc;
+    background: #2d2d2d;
+}
+
+._2rhmJa pre[class*=language-] code, ._2rhmJa pre code {
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+    white-space: pre;
+    vertical-align: unset
+}
+
+._2rhmJa table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-left: none;
+    word-break: break-word
+}
+
+body.reader-night-mode ._2rhmJa table, body.reader-night-mode ._2rhmJa table td, body.reader-night-mode ._2rhmJa table th {
+    border-color: #2f2f2f
+}
+
+._2rhmJa table td, ._2rhmJa table th {
+    padding: 8px;
+    border: 1px solid #eee;
+    line-height: 20px;
+    vertical-align: middle
+}
+
+._2rhmJa table th {
+    font-weight: bold
+}
+
+._2rhmJa table thead th {
+    vertical-align: middle;
+    text-align: inherit
+}
+
+._2rhmJa table tr:nth-of-type(2n) {
+    background-color: hsla(0, 0%, 70.2%, .15)
+}
+
+._2rhmJa table .image-package {
+    width: 100%;
+    margin-left: 0
+}
+
+._2rhmJa img {
+    max-width: 100%
+}
+
+._2rhmJa .image-package {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 0
+}
+
+._2rhmJa .image-package img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    border: 0
+}
+
+body.reader-night-mode ._2rhmJa .image-package img {
+    opacity: .85
+}
+
+._2rhmJa .image-package .image-container {
+    position: relative;
+    z-index: 95;
+    background-color: #e6e6e6;
+    transition: background-color .1s linear;
+    margin: 0 auto
+}
+
+body.reader-night-mode ._2rhmJa .image-package .image-container {
+    background-color: #595959
+}
+
+._2rhmJa .image-package .image-container-fill {
+    z-index: 90
+}
+
+._2rhmJa .image-package .image-container .image-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+._2rhmJa .image-package .image-container .image-view-error {
+    cursor: pointer;
+    color: grey
+}
+
+body.reader-night-mode ._2rhmJa .image-package .image-container .image-view-error {
+    color: #b3b3b3
+}
+
+._2rhmJa .image-package .image-container .image-view-error:after {
+    content: "\56FE\7247\83B7\53D6\5931\8D25\FF0C\8BF7\70B9\51FB\91CD\8BD5";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+    font-size: 14px
+}
+
+._2rhmJa .image-package .image-container .image-view img.image-loading {
+    opacity: .3
+}
+
+._2rhmJa .image-package .image-container .image-view img {
+    transition: all .15s linear;
+    z-index: 95;
+    opacity: 1
+}
+
+._2rhmJa .image-package .image-caption {
+    min-width: 20%;
+    max-width: 80%;
+    min-height: 43px;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+    color: #999
+}
+
+._2rhmJa .image-package .image-caption:empty {
+    display: none
+}
+
+body.reader-night-mode ._2rhmJa .image-package .image-caption {
+    border-color: #2f2f2f
+}
+
+._2rhmJa .math-block[mathimg="1"] {
+    display: block;
+    margin: 1em auto
+}
+
+._2rhmJa .math-inline[mathimg="1"] {
+    display: inline;
+    margin: 0 3px;
+    vertical-align: middle
+}
+
+._2rhmJa .math-block[mathimg="1"], ._2rhmJa .math-inline[mathimg="1"] {
+    max-width: 100%
+}
+
+body.reader-night-mode ._2rhmJa .math-block[mathimg="1"], body.reader-night-mode ._2rhmJa .math-inline[mathimg="1"] {
+    filter: invert(.8)
+}

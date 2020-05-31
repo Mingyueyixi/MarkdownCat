@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset='utf-8'>
+    <!-- 优先使用 IE 最新版本和 Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!-- 页面描述，不超过150个字符 -->
+    <meta name="description" content=""/>
+    <!-- 页面关键词 -->
+    <meta name="keywords" content=""/>
+    <!-- 网页作者 -->
+    <meta name="author" content="Mingyueyiyi@gmail.com"/>
+    <!-- 搜索引擎抓取 -->
+    <meta name="robots" content="index,follow"/>
+    <!-- 为移动设备添加 viewport -->
+    <!-- `width=device-width` 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+
+    <!-- iOS 设备 begin -->
+    <!-- 添加到主屏后的标题（iOS 6 新增） -->
+    <meta name="apple-mobile-web-app-title" content="标题">
+    <!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!-- 添加智能 App 广告条 Smart App Banner（iOS 6+ Safari） -->
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <meta name="format-detection" content="telphone=no, email=no"/>
+
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!--&lt;!&ndash; iOS 图标 begin &ndash;&gt;-->
+    <!--&lt;!&ndash; iPhone 和 iTouch，默认 57x57 像素，必须有 &ndash;&gt;-->
+    <!--<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png"/>-->
+    <!--&lt;!&ndash; Retina iPhone 和 Retina iTouch，114x114 像素，可以没有，但推荐有 &ndash;&gt;-->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"/>-->
+    <!--&lt;!&ndash;Retina iPad，144x144 像素，可以没有，但推荐有 &ndash;&gt;-->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"/>-->
+    <!--&lt;!&ndash;iOS 图标 end &ndash;&gt;-->
+
+    <!--&lt;!&ndash; iOS 启动画面 begin &ndash;&gt;-->
+    <!--&lt;!&ndash; iPad 竖屏 768 x 1004（标准分辨率） &ndash;&gt;-->
+    <!--<link rel="apple-touch-startup-image" sizes="768x1004" href="/splash-screen-768x1004.png"/>-->
+    <!--&lt;!&ndash; iPad 竖屏 1536x2008（Retina） &ndash;&gt;-->
+    <!--<link rel="apple-touch-startup-image" sizes="1536x2008" href="/splash-screen-1536x2008.png"/>-->
+    <!--&lt;!&ndash; iPad 横屏 1024x748（标准分辨率） &ndash;&gt;-->
+    <!--<link rel="apple-touch-startup-image" sizes="1024x748" href="/Default-Portrait-1024x748.png"/>-->
+    <!--&lt;!&ndash; iPad 横屏 2048x1496（Retina） &ndash;&gt;-->
+    <!--<link rel="apple-touch-startup-image" sizes="2048x1496" href="/splash-screen-2048x1496.png"/>-->
+    <!--&lt;!&ndash; iPhone/iPod Touch 竖屏 320x480 (标准分辨率) &ndash;&gt;-->
+    <!--<link rel="apple-touch-startup-image" href="/splash-screen-320x480.png"/>-->
+    <!--&lt;!&ndash; iPhone/iPod Touch 竖屏 640x960 (Retina) &ndash;&gt;-->
+    <!--<link rel="apple-touch-startup-image" sizes="640x960" href="/splash-screen-640x960.png"/>-->
+    <!--&lt;!&ndash;iPhone 5/iPod Touch 5 竖屏 640x1136 (Retina) &ndash;&gt;-->
+    <!--<link rel="apple-touch-startup-image" sizes="640x1136" href="/splash-screen-640x1136.png"/>-->
+    <!--&lt;!&ndash;iOS 启动画面 end &ndash;&gt;-->
+
+    <!-- iOS 设备 end -->
+    <!-- Windows 8 磁贴颜色 -->
+    <meta name="msapplication-TileColor" content="#000"/>
+    <!-- Windows 8 磁贴图标 -->
+    <meta name="msapplication-TileImage" content="icon.png"/>
+
+    <!-- 添加 RSS 订阅 -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"/>
+    <!-- 添加 favicon icon -->
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+    <!--polyfill，兼容旧浏览器-->
+    <script src="assets/js/polyfill.io.min.js"></script>
+    <!--<script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>-->
+    <script src="assets/js/polyfill.min.js"></script>
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/babel-polyfill/7.10.1/polyfill.min.js"></script>-->
+
+    <!--markdown解析器 https://www.jianshu.com/p/549cace91e22 -->
+    <!--正则实现，代码设计不好，不易于扩展，中文支持好，性能最好-->
+    <script src="assets/js/marked.min.js"></script>
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/marked/1.1.0/marked.min.js"></script>-->
+    <!--正则实现，代码设计较好，易于扩展，中文支持好，性能降低-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>-->
+    <!--逐字符解析，严格遵守规范，中文支持差，性能较好-->
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/markdown-it/11.0.0/markdown-it.js"></script>-->
+
+    <!-- 语法高亮库 -->
+    <script src="assets/js/highlight.min.js"></script>
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>-->
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>-->
+    <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.7.0/dist/highlightjs-line-numbers.min.js"></script>
+    <!--<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.3/styles/a11y-dark.min.css" rel="stylesheet">-->
+    <!--<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.3/styles/androidstudio.min.css" rel="stylesheet">-->
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark.min.css" rel="stylesheet">
+
+    <!--网络请求-->
+    <script src="assets/js/axios.min.js"></script>
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>-->
+    <!--MVVM框架-->
+    <script src="assets/js/vue.min.js"></script>
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>-->
+    <script src="assets/js/vue-router.min.js"></script>
+    <!--<script src="https://unpkg.com/vue-router@3.3.2/dist/vue-router.min.js"></script>-->
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/vue-router/3.2.0/vue-router.js"></script>-->
+    <!--jquery-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--<link href="assets/css/normalize.css" rel="stylesheet">-->
+    <!--<link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">-->
+    <link href="assets/css/common.css" rel="stylesheet">
+    <link href="assets/css/jianshu.css" rel="stylesheet">
+    <!--<link href="assets/css/markdown2.css" rel="stylesheet">-->
+    <!--<link href="assets/css/markdown3.css" rel="stylesheet">-->
+
+    <title>标题</title>
+    <style>
+
+        /* for block of numbers */
+        .hljs-ln-numbers {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            text-align: center;
+            color: #333;
+            background: #2d2d2d;
+            border-right: 1px solid #CCC;
+            vertical-align: top;
+            padding-right: 5px;
+
+            /* your custom style here */
+        }
+
+        /* for block of code */
+        .hljs-ln-code {
+            padding-left: 10px;
+        }
+
+        .chapter-bar {
+            width: 18rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: column;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            border: 1px solid #e6e6e6;
+        }
+
+        .expanse-side {
+            left: -18rem;
+        }
+
+        .chapter-bar .bar-header {
+            height: 5rem;
+            line-height: 5rem;
+            padding: 0 1rem;
+            font-size: 18px;
+            border-bottom: 2px solid #e6e6e6;
+        }
+
+        .chapter-bar .bar-body {
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 1rem;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            overflow-y: scroll;
+        }
+
+        .top-bar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3rem;
+            background: #fefefe;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .left-menu-icon {
+            display: inline-block;
+            color: #a3a3a3;
+            font-size: 20px;
+            margin-left: 1rem;
+            position: -webkit-sticky;
+            transform: scale(1.5, 1);
+        }
+
+        .clearfix:after { /*伪元素是行内元素 正常浏览器清除浮动方法*/
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .right {
+            display: block;
+            box-sizing: border-box;
+            margin-left: 18rem;
+            top: 0;
+        }
+        .right-expanse{
+            margin-left: 0rem;
+        }
+
+        .article-body {
+            box-sizing: border-box;;
+            padding: 3rem 10rem 3rem 5rem;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app" class="_2rhmJa">
+    <div :class="isSideExpanseClass" class="chapter-bar">
+        <div class="bar-header">
+            我的文档
+        </div>
+        <ol class="bar-body">
+            <li v-for="(item1,index1) in chapterList">
+                <router-link :to="{ path: 'article', query: { pos: item1.link }}">{{item1.text}}</router-link>
+                <ol v-if="item1.childs">
+                    <li v-for="(item2,index2) in item1.childs">
+                        <router-link :to="{ path: 'article', query: { pos: item2.link }}">{{item2.text}}</router-link>
+                        <ol v-if="item2.childs">
+                            <li v-for="(item3,index3) in item2.childs">
+                                <router-link :to="{ path: 'article', query: { pos: item3.link }}">{{item3.text}}
+                                </router-link>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div class="right" :class="isRightExpanseClass">
+        <div class="top-bar">
+            <div class="left-menu-icon" v-on:click="menuClick(event)">☰</div>
+        </div>
+        <router-view class="article-body"></router-view>
+    </div>
+</div>
+<script>
+
+    marked.setOptions({
+        renderer: new marked.Renderer(),
+        gfm: true,
+        tables: true,
+        breaks: false,
+        pedantic: false,
+        sanitize: false,
+        smartLists: true,
+        smartypants: false,
+        highlight: function (code, lang) {
+            if (lang && hljs.getLanguage(lang)) {
+                return hljs.highlight(lang, code, true).value;
+            } else {
+                return hljs.highlightAuto(code).value;
+            }
+        }
+    });
+    const Home = {}
+    const Article = {
+        name: 'ArticleComponent',
+        template: '<div><div v-html="articleHtml"></div></div>',
+        data() {
+            return {
+                articleHtml: ""
+            }
+        },
+        methods: {
+            fetchArticle() {
+                axios.get(this.$route.query.pos).then(response => {
+                    this.articleHtml = marked(response.data)
+                    setTimeout(() => {
+                        $('code.hljs').each(function (i, block) {
+                            hljs.lineNumbersBlock(block);
+                        });
+                    }, 1000)
+
+                }).catch(error => {
+                    if (error.response) {
+                        this.articleHtml = error.response.data
+                    } else if (error.request) {
+                        this.articleHtml = error.request
+                    } else {
+                        console.error(error)
+                    }
+                })
+            },
+        },
+        created() {
+            console.log('>>>', this)
+            hljs.initLineNumbersOnLoad();
+            this.fetchArticle()
+        },
+        watch: {
+            $route(to, from) {
+                console.log(">>>>>>", from, to)
+                this.fetchArticle()
+            }
+        },
+    }
+
+    const router = new VueRouter({
+        routes: [
+            {path: '/', component: Home},
+            {path: '/article/', component: Article}
+        ]
+    })
+
+    new Vue({
+        el: '#app',
+        router,
+        components: {
+            Home, Article
+        },
+        data: {
+            isSideExpanseClass: "",
+            isRightExpanseClass:"",
+            chapterList: [
+                {
+                    text: "B站人机识别", link: "docs/B站人机识别.md", childs: [
+                        {
+                            text: "二级", link: "/docs/favicon2.md", childs: [
+                                {text: "三级", link: "/docs/favicon3.md", childs: []}
+                            ]
+                        }
+                    ]
+                },
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+                {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
+            ]
+        },
+        created() {
+
+        },
+        methods: {
+            menuClick(event) {
+                let isSideExpanseClass = this.isSideExpanseClass
+                isSideExpanseClass ? this.isSideExpanseClass = '' : this.isSideExpanseClass = 'expanse-side'
+                isSideExpanseClass ? this.isRightExpanseClass = '' : this.isRightExpanseClass = 'right-expanse'
+            },
+
+        }
+    })
+</script>
+</body>
+</html>
