@@ -106,151 +106,57 @@
     <script src="assets/js/highlight.min.js"></script>
     <!--<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>-->
     <!--<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>-->
-    <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.7.0/dist/highlightjs-line-numbers.min.js"></script>
+    <script src="assets/js/highlightjs-line-numbers.min.js"></script>
+    <!--<script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>-->
+
     <!--<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.3/styles/a11y-dark.min.css" rel="stylesheet">-->
-    <!--<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.3/styles/androidstudio.min.css" rel="stylesheet">-->
-    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.3/styles/androidstudio.min.css" rel="stylesheet">
+    <!--<link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark.min.css" rel="stylesheet">-->
 
     <!--网络请求-->
     <script src="assets/js/axios.min.js"></script>
     <!--<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>-->
+
     <!--MVVM框架-->
     <script src="assets/js/vue.min.js"></script>
     <!--<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>-->
     <script src="assets/js/vue-router.min.js"></script>
     <!--<script src="https://unpkg.com/vue-router@3.3.2/dist/vue-router.min.js"></script>-->
     <!--<script src="https://cdn.bootcdn.net/ajax/libs/vue-router/3.2.0/vue-router.js"></script>-->
+
     <!--jquery-->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 
     <!--<link href="assets/css/normalize.css" rel="stylesheet">-->
     <!--<link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">-->
     <link href="assets/css/common.css" rel="stylesheet">
-    <link href="assets/css/jianshu.css" rel="stylesheet">
+    <link href="assets/css/article.css" rel="stylesheet">
+    <link href="assets/css/app-base.css" rel="stylesheet">
     <!--<link href="assets/css/markdown2.css" rel="stylesheet">-->
     <!--<link href="assets/css/markdown3.css" rel="stylesheet">-->
 
     <title>标题</title>
-    <style>
-
-        /* for block of numbers */
-        .hljs-ln-numbers {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-
-            text-align: center;
-            color: #333;
-            background: #2d2d2d;
-            border-right: 1px solid #CCC;
-            vertical-align: top;
-            padding-right: 5px;
-
-            /* your custom style here */
-        }
-
-        /* for block of code */
-        .hljs-ln-code {
-            padding-left: 10px;
-        }
-
-        .chapter-bar {
-            width: 18rem;
-            box-sizing: border-box;
-            display: flex;
-            flex-flow: column;
-            position: fixed;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            border: 1px solid #e6e6e6;
-        }
-
-        .expanse-side {
-            left: -18rem;
-        }
-
-        .chapter-bar .bar-header {
-            height: 5rem;
-            line-height: 5rem;
-            padding: 0 1rem;
-            font-size: 18px;
-            border-bottom: 2px solid #e6e6e6;
-        }
-
-        .chapter-bar .bar-body {
-            position: relative;
-            display: inline-block;
-            box-sizing: border-box;
-            padding: 1rem;
-            width: 100%;
-            height: 100%;
-            font-size: 16px;
-            overflow-y: scroll;
-        }
-
-        .top-bar {
-            position: sticky;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3rem;
-            background: #fefefe;
-            border-bottom: 1px solid #e6e6e6;
-        }
-
-        .left-menu-icon {
-            display: inline-block;
-            color: #a3a3a3;
-            font-size: 20px;
-            margin-left: 1rem;
-            position: -webkit-sticky;
-            transform: scale(1.5, 1);
-        }
-
-        .clearfix:after { /*伪元素是行内元素 正常浏览器清除浮动方法*/
-            content: "";
-            display: block;
-            height: 0;
-            clear: both;
-            visibility: hidden;
-        }
-
-        .right {
-            display: block;
-            box-sizing: border-box;
-            margin-left: 18rem;
-            top: 0;
-        }
-        .right-expanse{
-            margin-left: 0rem;
-        }
-
-        .article-body {
-            box-sizing: border-box;;
-            padding: 3rem 10rem 3rem 5rem;
-        }
-
-    </style>
 </head>
 <body>
-<div id="app" class="_2rhmJa">
+<div id="app" class="app-body">
     <div :class="isSideExpanseClass" class="chapter-bar">
         <div class="bar-header">
             我的文档
         </div>
         <ol class="bar-body">
-            <li v-for="(item1,index1) in chapterList">
-                <router-link :to="{ path: 'article', query: { pos: item1.link }}">{{item1.text}}</router-link>
+            <li v-for="(item1,index1) in chapterList" @click="clickChapterItem(event)">
+                <router-link :to="{ path: 'article', query: { pos: item1.link }}">
+                    {{item1.text}}
+                </router-link>
                 <ol v-if="item1.childs">
                     <li v-for="(item2,index2) in item1.childs">
-                        <router-link :to="{ path: 'article', query: { pos: item2.link }}">{{item2.text}}</router-link>
+                        <router-link :to="{ path: 'article', query: { pos: item2.link }}">
+                            {{item2.text}}
+                        </router-link>
                         <ol v-if="item2.childs">
                             <li v-for="(item3,index3) in item2.childs">
-                                <router-link :to="{ path: 'article', query: { pos: item3.link }}">{{item3.text}}
+                                <router-link :to="{ path: 'article', query: { pos: item3.link }}">
+                                    {{item3.text}}
                                 </router-link>
                             </li>
                         </ol>
@@ -298,12 +204,16 @@
             fetchArticle() {
                 axios.get(this.$route.query.pos).then(response => {
                     this.articleHtml = marked(response.data)
-                    setTimeout(() => {
-                        $('code.hljs').each(function (i, block) {
-                            hljs.lineNumbersBlock(block);
-                        });
-                    }, 1000)
-
+                    this.$nextTick(() => {
+                        let aNodes = document.querySelectorAll('a')
+                        for (let i = 0; i < aNodes.length; i++) {
+                            aNodes[i].target = 'blank'
+                        }
+                        let codeNodes = document.querySelectorAll('code')
+                        for (let i = 0; i < codeNodes.length; i++) {
+                            hljs.lineNumbersBlock(codeNodes[i]);
+                        }
+                    })
                 }).catch(error => {
                     if (error.response) {
                         this.articleHtml = error.response.data
@@ -316,8 +226,9 @@
             },
         },
         created() {
-            console.log('>>>', this)
+            // console.log('>>>', this)
             hljs.initLineNumbersOnLoad();
+            hljs.initHighlightingOnLoad()
             this.fetchArticle()
         },
         watch: {
@@ -343,7 +254,7 @@
         },
         data: {
             isSideExpanseClass: "",
-            isRightExpanseClass:"",
+            isRightExpanseClass: "",
             chapterList: [
                 {
                     text: "B站人机识别", link: "docs/B站人机识别.md", childs: [
@@ -386,7 +297,7 @@
                 {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
                 {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
                 {text: 'Python爬虫优化', link: 'docs/Python爬虫优化.md'},
-            ]
+            ],
         },
         created() {
 
@@ -397,9 +308,24 @@
                 isSideExpanseClass ? this.isSideExpanseClass = '' : this.isSideExpanseClass = 'expanse-side'
                 isSideExpanseClass ? this.isRightExpanseClass = '' : this.isRightExpanseClass = 'right-expanse'
             },
-
-        }
+            clickChapterItem(event) {
+                // this.$nextTick(()=>{
+                //
+                // })
+                let node = event.target
+                console.log(event)
+                if (node.nodeName.toLowerCase() == 'a') {
+                    let selectedNodes = document.querySelectorAll('.bar-body .selected')
+                    selectedNodes = selectedNodes ? selectedNodes : []
+                    for (let i = 0; i < selectedNodes.length; i++) {
+                        selectedNodes[i].className = selectedNodes[i].className.replace('selected', '')
+                    }
+                    node.className += ' selected'
+                }
+            }
+        },
     })
+
 </script>
 </body>
 </html>

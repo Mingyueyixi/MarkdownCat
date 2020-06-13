@@ -1,0 +1,344 @@
+html,body {
+    font-size: 16px;
+}
+.article-body code, .article-body pre, .article-body pre[class*=language-] {
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 12px
+}
+
+.article-body {
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 20px
+}
+
+.article-body h1, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6 {
+    margin-bottom: 16px
+}
+
+/*标题吸顶*/
+.article-body h1 {
+    font-size: 26px;
+    position: sticky;
+    top: 0px;;
+}
+
+
+.article-body h2 {
+    font-size: 24px
+}
+
+.article-body h3 {
+    font-size: 22px
+}
+
+.article-body h4 {
+    font-size: 20px
+}
+
+.article-body h5 {
+    font-size: 18px
+}
+
+.article-body h6 {
+    font-size: 16px
+}
+
+.article-body p {
+    margin-bottom: 20px;
+    word-break: break-word
+}
+
+.article-body hr {
+    margin: 0 0 20px;
+    border: 0;
+    border-top: 1px solid #eee !important
+}
+
+.article-body hr {
+    border-color: #2f2f2f !important
+}
+
+.article-body blockquote {
+    padding: 20px;
+    /*background-color: #f5fff2;*/
+    background-color: #fffcf2;
+    border-left: 6px solid #e6eae6;
+    word-break: break-word;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0 0 20px
+}
+
+
+.article-body blockquote h1:last-child, .article-body blockquote h2:last-child, .article-body blockquote h3:last-child, .article-body blockquote h4:last-child, .article-body blockquote h5:last-child, .article-body blockquote h6:last-child, .article-body blockquote li:last-child, .article-body blockquote ol:last-child, .article-body blockquote p:last-child, .article-body blockquote ul:last-child {
+    margin-bottom: 0
+}
+
+.article-body blockquote .image-package {
+    width: 100%;
+    margin-left: 0
+}
+
+.article-body ol, .article-body ul {
+    word-break: break-word;
+    padding: 0 0 0 1rem
+}
+
+.article-body ol li, .article-body ul li {
+    line-height: 30px
+}
+
+.article-body ol li ol, .article-body ol li ul, .article-body ul li ol, .article-body ul li ul {
+    margin-top: 8px;
+}
+
+.article-body ol {
+    list-style-type: decimal
+}
+
+.article-body ul {
+    list-style-type: disc
+}
+
+.article-body code {
+    padding: 2px 4px;
+    margin: 0 2px;
+    border: none;
+    vertical-align: middle;
+    white-space: pre-wrap
+}
+
+.article-body :not(pre) code {
+    color: #c7254e;
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+}
+
+.article-body pre, .article-body pre[class*=language-] {
+    word-wrap: normal;
+    word-break: break-all;
+    white-space: pre;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    margin-top: 0;
+    padding: 1em;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    z-index: 0;
+    line-height: 1.5;
+    color: #ccc;
+    background: #2d2d2d;
+}
+
+.article-body pre[class*=language-] code, .article-body pre code {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: inherit;
+    white-space: pre;
+    vertical-align: unset
+}
+
+.article-body table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-left: none;
+    word-break: break-word
+}
+
+.article-body table, .article-body table td, .article-body table th {
+    border-color: #2f2f2f
+}
+
+.article-body table td, .article-body table th {
+    padding: 8px;
+    border: 1px solid #eee;
+    line-height: 20px;
+    vertical-align: middle
+}
+
+.article-body table th {
+    font-weight: bold
+}
+
+.article-body table thead th {
+    vertical-align: middle;
+    text-align: inherit
+}
+
+.article-body table tr:nth-of-type(2n) {
+    background-color: hsla(0, 0%, 70.2%, .15)
+}
+
+.article-body table .image-package {
+    width: 100%;
+}
+
+
+.article-body img {
+    max-width: 100%
+}
+
+.article-body .image-package {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 0
+}
+
+.article-body .image-package img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    border: 0
+}
+
+.article-body .image-package img {
+    opacity: .85
+}
+
+.article-body .image-package .image-container {
+    position: relative;
+    z-index: 95;
+    background-color: #e6e6e6;
+    transition: background-color .1s linear;
+    margin: 0 auto
+}
+
+.article-body .image-package .image-container {
+    background-color: #595959
+}
+
+.article-body .image-package .image-container-fill {
+    z-index: 90
+}
+
+.article-body .image-package .image-container .image-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.article-body .image-package .image-container .image-view-error {
+    cursor: pointer;
+    color: grey
+}
+
+.article-body .image-package .image-container .image-view-error {
+    color: #b3b3b3
+}
+
+.article-body .image-package .image-container .image-view-error:after {
+    content: "\56FE\7247\83B7\53D6\5931\8D25\FF0C\8BF7\70B9\51FB\91CD\8BD5";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+    font-size: 14px
+}
+
+.article-body .image-package .image-container .image-view img.image-loading {
+    opacity: .3
+}
+
+.article-body .image-package .image-container .image-view img {
+    transition: all .15s linear;
+    z-index: 95;
+    opacity: 1
+}
+
+.article-body .image-package .image-caption {
+    min-width: 20%;
+    max-width: 80%;
+    min-height: 40px;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+    color: #999
+}
+
+.article-body .image-package .image-caption:empty {
+    display: none
+}
+
+.article-body .image-package .image-caption {
+    border-color: #2f2f2f
+}
+
+.article-body .math-block[mathimg="1"] {
+    display: block;
+    margin: 1em auto
+}
+
+.article-body .math-inline[mathimg="1"] {
+    display: inline;
+    margin: 0 3px;
+    vertical-align: middle
+}
+
+.article-body .math-block[mathimg="1"], .article-body .math-inline[mathimg="1"] {
+    max-width: 100%
+}
+
+.article-body .math-block[mathimg="1"], .article-body .math-inline[mathimg="1"] {
+    filter: invert(.8)
+}
+
+/*代码块设置*/
+.article-body code table,.article-body code td,.article-body code th,.article-body code tr{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* for block of numbers */
+.article-body code .hljs-ln-numbers {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    color: #888;
+    padding: 0 10px;
+    background: #2d2d2d;
+    border-right: 1px solid #888;
+    vertical-align: top;
+    box-sizing: content-box;
+    /* your custom style here */
+}
+
+/* for block of code */
+.article-body code .hljs-ln-code {
+    padding: 0 10px;
+    background: #2d2d2d;
+}
+
+/*选择文字*/
+::selection {
+    /*background: #cbffb2;*/
+    background: #fbfeab;
+    color: #000
+}
+
+a::selection {
+    /*background: #cbffb2;*/
+    background: #fbfeab;
+    color: #0645ad
+}
