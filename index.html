@@ -139,7 +139,7 @@
 </head>
 <body>
 <div id="app" class="app-body">
-    <div :class="isSideExpanseClass" class="chapter-bar">
+    <div :class="isSideExpanseClass?'expanse-side':''" class="chapter-bar">
         <div class="bar-header">
             我的文档
         </div>
@@ -165,7 +165,7 @@
             </li>
         </ol>
     </div>
-    <div class="right" :class="isRightExpanseClass">
+    <div class="right" :class="isSideExpanseClass?'expanse-right':''">
         <div class="top-bar">
             <div class="left-menu-icon" v-on:click="menuClick(event)">☰</div>
         </div>
@@ -253,8 +253,7 @@
             Home, Article
         },
         data: {
-            isSideExpanseClass: "",
-            isRightExpanseClass: "",
+            isSideExpanseClass: false,
             chapterList: [
                 {
                     text: "B站人机识别", link: "docs/B站人机识别.md", childs: [
@@ -304,14 +303,9 @@
         },
         methods: {
             menuClick(event) {
-                let isSideExpanseClass = this.isSideExpanseClass
-                isSideExpanseClass ? this.isSideExpanseClass = '' : this.isSideExpanseClass = 'expanse-side'
-                isSideExpanseClass ? this.isRightExpanseClass = '' : this.isRightExpanseClass = 'right-expanse'
+                this.isSideExpanseClass = !this.isSideExpanseClass
             },
             clickChapterItem(event) {
-                // this.$nextTick(()=>{
-                //
-                // })
                 let node = event.target
                 console.log(event)
                 if (node.nodeName.toLowerCase() == 'a') {
@@ -322,7 +316,17 @@
                     }
                     node.className += ' selected'
                 }
+                this.closeChapterMenuIfMoble()
+            },
+            closeChapterMenuIfMoble() {
+                //移动端适配。点击菜单item,关闭菜单。app-base.css样式，媒体查询定义了zIndex、boxShadow
+                let chaperbarEl = document.querySelector('.chapter-bar')
+                let zIndex = window.getComputedStyle(chaperbarEl).zIndex
+                if (parseInt(zIndex)) {
+                    this.isSideExpanseClass = !this.isSideExpanseClass
+                }
             }
+
         },
     })
 

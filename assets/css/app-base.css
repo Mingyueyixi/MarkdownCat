@@ -1,18 +1,65 @@
+.right {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 18rem;
+    right: 0;
+    bottom: 0;
+}
+
+.expanse-right {
+    left: 0rem;
+}
+
 .chapter-bar {
+    position: fixed;
     width: 18rem;
+    top: 0;
     box-sizing: border-box;
     display: flex;
     border-right: 1px solid #dddddd;
     flex-flow: column;
-    position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    /*border: 1px solid #e6e6e6;*/
 }
 
+.article-body {
+    box-sizing: border-box;;
+    padding: 0 10rem 3rem 5rem;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .chapter-bar{
+        left: -100%;
+    }
+    .chapter-bar.expanse-side {
+        left: 0;
+        z-index: 99;
+        box-shadow: 0 0 2rem #888;
+        background: #ffffff;
+    }
+    .right {
+        display: inline-block;
+        box-sizing: border-box;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .article-body{
+        box-sizing: border-box;;
+        padding: 0 3rem 3rem 3rem;
+    }
+}
+.app-body{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
 .expanse-side {
-    left: -18rem;
+    left: -100%;
 }
 
 .chapter-bar .bar-header {
@@ -34,17 +81,20 @@
     font-size: 16px;
     overflow-y: scroll;
 }
-.bar-body li{
+
+.bar-body li {
     margin-left: 1rem;
 }
-.bar-body li a{
+
+.bar-body li a {
     display: block;
 }
 
-.bar-body li a:hover{
+.bar-body li a:hover {
     background: #fff6d8;
 }
-.bar-body li .selected{
+
+.bar-body li .selected {
     background: #fff6d8;
 }
 
@@ -53,8 +103,6 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 6rem;
-    background: #fefefe;
 }
 
 .top-bar .left-menu-icon {
@@ -72,20 +120,4 @@
     height: 0;
     clear: both;
     visibility: hidden;
-}
-
-.right {
-    display: block;
-    box-sizing: border-box;
-    margin-left: 18rem;
-    top: 0;
-}
-
-.right-expanse {
-    margin-left: 0rem;
-}
-
-.article-body {
-    box-sizing: border-box;;
-    padding: 0 10rem 3rem 5rem;
 }
